@@ -18,7 +18,6 @@ RUN set -ex; \
     make; \
     make install; \
     cp -HR objs/ffmpeg /srs/objs/; \
-    cd /; \
     rm -rf /tmp/*; \
     rm -rf /var/lib/apt/lists/*;
 COPY ./srs.conf /srs/conf/docker.conf
